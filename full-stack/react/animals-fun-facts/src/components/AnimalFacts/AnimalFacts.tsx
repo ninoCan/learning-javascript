@@ -14,7 +14,7 @@ function AnimalFacts(
       <h1>{title === '' ? 'Click an animal for a fun fact!' : title}</h1>
       <AnimalStrip />
       {background}
-
+      <p id="fact"></p>
     </>
   );
 }
