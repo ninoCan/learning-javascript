@@ -1,12 +1,11 @@
-import React, { FormEvent, useState } from 'react'
+import React, { Dispatch, FormEvent, SetStateAction, useState } from 'react'
 
 interface LoginFormProps {
-  auth: boolean;
+  setAuthorized: Dispatch<SetStateAction<boolean>>;
 }
 
-function LoginForm({auth}: LoginFormProps) {
-  const correctPassword = "bigKahuha";
-  const [authorized, setAuthorized] = useState<boolean>(auth);
+function LoginForm({setAuthorized}: LoginFormProps) {
+  const correctPassword = "tuna";
 
   function handleSubmit(event: FormEvent<HTMLFormElement> | any): void {
     const enteredPassword: string = event.target.querySelector(
