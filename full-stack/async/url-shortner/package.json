@@ -1,0 +1,9 @@
+{
+  "name": "url-shortner",
+  "version": "1.0.0",
+  "description": "A url-shortner created out of a codecademy exercise",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": ""
+}
