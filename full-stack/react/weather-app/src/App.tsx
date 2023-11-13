@@ -1,18 +1,6 @@
-import React from 'react';
+import React from "react";
+import Forecast from "./components/Forecast";
 
-function App() {
-  return (
-    <div style={{ textAlign: 'center' }}>
-      <header>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+  return <Forecast />;
 }
-
-export default App;
