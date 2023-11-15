@@ -1,26 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import { get } from '../mockedData/fetch';
+import { get } from './mockBackend/fetch';
 
 export default function Shop() {
-  const [categories, setCategories] = useState<string[]>();
-  const [selectedCategory, setSelectedCategory] = useState<string>();
+  const [categories, setCategories] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState(null);
   const [items, setItems] = useState({});
 
-  useEffect(() => {
-    if (!categories) {
-      get('/categories').then((response) => {
-        setCategories(response.data);
-      });
-    }
-  });
 
-  // if (selectedCategory && !items[selectedCategory]) {
-  //   useEffect(() => {
-  //     get(`/items?category=${selectedCategory}`).then((response) => {
-  //       setItems((prev) => ({ ...prev, [selectedCategory]: response.data }));
-  //     });
-  //   });
-  // }
+
+  useEffect(() => {
+    get('/categories').then((response) => {
+      setCategories(response.data);
+    });
+  },[]);
+
+
+
+  useEffect(() => {
+    get(`/items?category=${selectedCategory}`).then((response) => {
+      setItems((prev) => ({ ...prev, [selectedCategory]: response.data }));
+    });
+  },[items, selectedCategory]);
 
   if (!categories) {
     return <p>Loading..</p>;
