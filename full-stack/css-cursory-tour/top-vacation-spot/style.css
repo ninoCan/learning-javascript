@@ -1,0 +1,61 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: maroon;
+}
+
+#author {
+    color: teal;
+    font-family: cursive;
+    font-size: 110%;
+    align-content: center;
+}
+
+#publishing-date {
+    color: chartreuse;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+a[href*="florence"] {
+    color: lightsalmon;
+}
+
+a[href*="beijing"] {
+  color: lightblue;
+}
+
+a[href*='seoul'] {
+  color: lightpink;
+}
+
+a:hover {
+    color: darkorange;
+    font-size: 101%;
+}
+
+.heading-background {
+    background-color: gray;
+    padding: 2px;
+}
+
+h5 {
+    color: blueviolet;
+}
+
+h2.destination {
+    font-family: serif;
+}
+
+li h4 {
+    color: dodgerblue;
+}
+
+h5,
+li {
+    font-family: monospace;
+}
