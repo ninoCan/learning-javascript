@@ -1,0 +1,48 @@
+body {
+  background: #1ed269;
+  background: -webkit-linear-gradient(-35deg, #691ed2, #1ed269);
+  color: white;
+}
+
+img {
+  display: block;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.description {
+  font-size: 20px;
+}
+
+#cook-time {
+  font-weight: bold;
+}
+
+.ingredients li {
+  list-style: square;
+}
+
+p.time{
+  color: violet;
+}
+
+a.external-link {
+  color: coral;
+}
+
+a.external-link:hover {
+  color: aquamarine;
+  font-weight: bold;
+}
+
+h1,
+h2,
+p,
+li {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+  text-shadow: 2px 2px 1px chocolate;
+}

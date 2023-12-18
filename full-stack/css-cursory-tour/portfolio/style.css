@@ -1,0 +1,38 @@
+body {
+  background: bisque;
+  background: -webkit-linear-gradient(-45deg, #066f45, #15131e);
+}
+
+.header {
+  background-color: cornflowerblue;
+  background: -webkit-linear-gradient(0deg,
+  cornflowerblue, #066f45);
+  text-align: center;
+}
+
+.header h1 {
+  color: #6f0e30;
+  text-shadow: #6f0e30 1px 0 10px;
+}
+
+.about-me {
+  font-size: 20px;
+  opacity: 70%;
+  padding: 0 20% 1px 20%;
+}
+
+
+.title {
+  font-weight: bold;
+}
+
+.content {
+  color: azure;
+  margin: 3%;
+}
+
+footer {
+  text-align: right;
+  margin: 3%;  
+  font-size: small;
+}
