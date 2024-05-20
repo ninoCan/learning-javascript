@@ -1,0 +1,27 @@
+.breadcrumb > li {
+  display: inline;
+}
+
+.breadcrumb li+li::before {
+  content: "> ";
+}
+
+.breadcrumb li a::hover {
+  text-decoration: underline;
+  color: aqua;
+}
+
+.breadcrumb li.attribute a {
+  color: azure;
+}
+
+.breadcrumb li+li.attribute::before {
+  content: ":: ";
+}
+
+.breadcrumb li.attribute::after {
+  content: 'X';
+  color: red;
+  vertical-align: super;
+  font-size: 10px;
+}
